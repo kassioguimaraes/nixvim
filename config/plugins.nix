@@ -33,7 +33,10 @@
      undotree.enable = true;
      treesitter.enable = true;
      lastplace.enable = true;
-     copilot-vim.enable = true;
+     copilot-vim = {
+     enable = true;
+         filetypes = { "*" = true; };
+     };
 
    };
 

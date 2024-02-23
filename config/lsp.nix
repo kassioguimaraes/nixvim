@@ -22,14 +22,14 @@
       autoEnableSources = true;
       mapping = {
         "<S-CR>" = "cmp.mapping.complete()";
-        "<S-Tab>" = {
+        "<C-k>" = {
           action = "cmp.mapping.select_prev_item()";
           modes = [
             "i"
             "s"
           ];
         };
-        "<Tab>" = {
+        "<C-j>" = {
           action = "cmp.mapping.select_next_item()";
           modes = [
             "i"
