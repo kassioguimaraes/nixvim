@@ -2,12 +2,15 @@
  plugins.which-key = {
    enable = true;
    registrations = {
+   "<leader>c" = "Command";
+   "<leader>q" = "Quit";
    "<leader>f" = "Files";
    "<leader>g" = "Git";
    "<leader>fe" = "Explorer";
    "<leader>fs" = "Save File";
    "<leader>ff" = "Project Files";
    "<leader>fg" = "Grep Files)";
+   "<leader>fd" = "Close File)";
    "<leader>fF" = "Find Files";
    "<leader>s" = "Grep buffer";
    "<leader>w" = "Window";
@@ -28,13 +31,28 @@
  };
  keymaps = [
     {
+    action = "<cmd>qall<CR>";
+      key = "<leader>q";
+      mode = [ "n" ];
+    }
+    {
       action = "<cmd>Neogit<CR>";
       key = "<leader>g";
       mode = [ "n" ];
     }
     {
+      action = ":";
+      key = "<leader>c";
+      mode = [ "n" ];
+    }
+    {
       action = "<cmd>Oil<CR>";
       key = "<leader>fe";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>bdelete<CR>";
+      key = "<leader>fd";
       mode = [ "n" ];
     }
     {

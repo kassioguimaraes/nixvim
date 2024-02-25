@@ -27,7 +27,7 @@
        deleteToTrash = true;
        skipConfirmForSimpleEdits = true;
      };
-
+     noice.enable = true;
      cursorline.enable = true;
      surround.enable = true;
      undotree.enable = true;
