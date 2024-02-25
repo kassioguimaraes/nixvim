@@ -33,9 +33,15 @@
      undotree.enable = true;
      treesitter.enable = true;
      lastplace.enable = true;
-     copilot-vim = {
+     better-escape = {
+       enable = true;
+       mapping = ["jj"];
+     };
+     copilot-lua = {
      enable = true;
          filetypes = { "*" = true; };
+     suggestion.enabled = false;
+     panel.enabled = false;
      };
 
    };
