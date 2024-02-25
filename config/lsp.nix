@@ -24,14 +24,14 @@
       autoEnableSources = true;
       mapping = {
         "<CR>" = "cmp.mapping.confirm({ select = false }) ";
-        "<S-Tab>" = {
+        "<C-k>" = {
           action = "cmp.mapping.select_prev_item()";
           modes = [
             "i"
             "s"
           ];
         };
-        "<Tab>" = {
+        "<C-j>" = {
           action = "cmp.mapping.select_next_item()";
           modes = [
             "i"
@@ -41,7 +41,6 @@
       };
       sources = [
         { name = "nvim_lsp"; }
-        { name = "copilot"; }
         { name = "path"; }
         { name = "buffer"; }
       ];
@@ -49,7 +48,6 @@
     };
     lsp-format.enable = true;
     cmp-nvim-lsp.enable = true;
-    copilot-cmp.enable = true;
     none-ls.enable = true;
   };
 }

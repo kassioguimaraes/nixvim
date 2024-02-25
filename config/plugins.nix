@@ -37,13 +37,7 @@
        enable = true;
        mapping = ["jj"];
      };
-     copilot-lua = {
-     enable = true;
-         filetypes = { "*" = true; };
-     suggestion.enabled = false;
-     panel.enabled = false;
-     };
-
+     copilot-vim.enable = true;
    };
 
 }
