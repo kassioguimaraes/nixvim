@@ -12,6 +12,7 @@
    "<leader>fg" = "Grep Files)";
    "<leader>fd" = "Close File)";
    "<leader>fF" = "Find Files";
+"<leader>gd" = "Go to Definition";
    "<leader>s" = "Grep buffer";
    "<leader>w" = "Window";
    "<leader>wi" = "Swap window";
@@ -33,6 +34,11 @@
     {
     action = "<cmd>qall<CR>";
       key = "<leader>q";
+      mode = [ "n" ];
+    }
+    {
+    action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      key = "<leader>gd";
       mode = [ "n" ];
     }
     {
