@@ -27,6 +27,10 @@
        deleteToTrash = true;
        skipConfirmForSimpleEdits = true;
      };
+     vim-matchup = {
+     enable = true;
+     enableSurround = true;
+     };
      noice.enable = true;
      cursorline.enable = true;
      surround.enable = true;

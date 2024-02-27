@@ -48,6 +48,7 @@
 
     };
     lsp-format.enable = true;
+    lspsaga.enable = true;
     cmp-nvim-lsp.enable = true;
     copilot-cmp.enable = true;
     none-ls.enable = true;

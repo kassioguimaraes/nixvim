@@ -2,17 +2,21 @@
  plugins.which-key = {
    enable = true;
    registrations = {
+   "<leader>." = "Terminal";
    "<leader>c" = "Command";
    "<leader>q" = "Quit";
    "<leader>f" = "Files";
-   "<leader>g" = "Git";
+   "<leader>g" = "Lsp";
+   "<leader>gh" = "Show Documentation";
+   "<leader>gd" = "Go to Definition";
+   "<leader>gr" = "Rename Symbol";
+   "<leader>ga" = "Code Actions";
    "<leader>fe" = "Explorer";
    "<leader>fs" = "Save File";
    "<leader>ff" = "Project Files";
    "<leader>fg" = "Grep Files)";
    "<leader>fd" = "Close File)";
    "<leader>fF" = "Find Files";
-"<leader>gd" = "Go to Definition";
    "<leader>s" = "Grep buffer";
    "<leader>w" = "Window";
    "<leader>wi" = "Swap window";
@@ -32,6 +36,11 @@
  };
  keymaps = [
     {
+    action = "<cmd>Lspsaga term_toggle<CR>";
+      key = "<A-.>";
+      mode = [ "n" "t" ];
+    }
+    {
     action = "<cmd>qall<CR>";
       key = "<leader>q";
       mode = [ "n" ];
@@ -42,8 +51,18 @@
       mode = [ "n" ];
     }
     {
-      action = "<cmd>Neogit<CR>";
-      key = "<leader>g";
+      action = "<cmd>Lspsaga hover_doc<CR>";
+      key = "<leader>gh";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga rename<CR>";
+      key = "<leader>gr";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga code_action<CR>";
+      key = "<leader>ga";
       mode = [ "n" ];
     }
     {
