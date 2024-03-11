@@ -7,14 +7,14 @@
           enable = true;
           installRustc = true;
           installCargo = true;
-        };
-        intelephense.enable = true;
+          };
         gopls.enable = true;
         svelte.enable = true;
         tailwindcss.enable = true;
         tsserver.enable = true;
         pylsp.enable = true;
         nixd.enable = true;
+        intelephense.enable = true;
       };
 
     };
@@ -51,6 +51,18 @@
     lspsaga.enable = true;
     cmp-nvim-lsp.enable = true;
     copilot-cmp.enable = true;
-    none-ls.enable = true;
+    none-ls = {
+      enable = true;
+      shouldAttach = ''
+        function(bufnr)
+                return not vim.api.nvim_buf_get_name(bufnr):match("^git://")
+            end
+        '';
+      sources = {
+      diagnostics = {
+        golangci_lint.enable = true;
+      };
+      };
+    };
   };
 }

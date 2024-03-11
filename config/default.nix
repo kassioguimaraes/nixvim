@@ -14,5 +14,9 @@
       shiftwidth = 4;
       expandtab = true;
       clipboard = "unnamedplus";
+      breakindent = true;
+      ignorecase = true;
+      smartcase = true;
+      signcolumn = "yes";
   };
 }
