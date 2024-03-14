@@ -15,6 +15,8 @@
       expandtab = true;
       clipboard = "unnamedplus";
       breakindent = true;
+      autoindent = true;
+      smartindent = true;
       ignorecase = true;
       smartcase = true;
       signcolumn = "yes";

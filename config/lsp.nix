@@ -21,6 +21,7 @@
     nvim-cmp = {
       enable = true;
       #preselect = "None";
+      snippet = {expand = "luasnip";};
       autoEnableSources = true;
       mapping = {
         "<CR>" = "cmp.mapping.confirm({ select = false }) ";
@@ -47,6 +48,8 @@
       ];
 
     };
+    luasnip.enable = true;
+    cmp_luasnip.enable = true;
     lsp-format.enable = true;
     lspsaga.enable = true;
     cmp-nvim-lsp.enable = true;
