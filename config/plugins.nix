@@ -29,6 +29,7 @@
      };
      vim-matchup = {
      enable = true;
+     matchParen.enable = false;
      enableSurround = true;
      };
      noice.enable = true;
