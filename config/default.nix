@@ -14,9 +14,6 @@
       shiftwidth = 4;
       expandtab = true;
       clipboard = "unnamedplus";
-      breakindent = true;
-      autoindent = true;
-      smartindent = true;
       ignorecase = true;
       winbar = "";
       smartcase = true;

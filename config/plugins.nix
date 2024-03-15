@@ -36,11 +36,10 @@
      cursorline.enable = true;
      surround.enable = true;
      undotree.enable = true;
-     indent-blankline = {
+     treesitter = {
          enable = true;
-         scope.enabled = true;
+         indent = true;
      };
-     treesitter.enable = true;
      lastplace.enable = true;
      better-escape = {
        enable = true;
