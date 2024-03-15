@@ -18,6 +18,7 @@
       autoindent = true;
       smartindent = true;
       ignorecase = true;
+      winbar = "";
       smartcase = true;
       signcolumn = "yes";
   };

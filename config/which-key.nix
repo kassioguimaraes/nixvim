@@ -9,13 +9,17 @@
    "<leader>g" = "Lsp";
    "<leader>gh" = "Show Documentation";
    "<leader>gd" = "Go to Definition";
+   "<leader>go" = "Outline";
+   "<leader>ge" = "File Errors";
+   "<leader>gE" = "Project Errors";
    "<leader>gr" = "Rename Symbol";
    "<leader>ga" = "Code Actions";
    "<leader>fe" = "Explorer";
+   "<leader>fu" = "Undo Tree";
    "<leader>fs" = "Save File";
    "<leader>ff" = "Project Files";
-   "<leader>fg" = "Grep Files)";
-   "<leader>fd" = "Close File)";
+   "<leader>fg" = "Grep Files";
+   "<leader>fd" = "Close File";
    "<leader>fF" = "Find Files";
    "<leader>s" = "Grep buffer";
    "<leader>w" = "Window";
@@ -66,6 +70,26 @@
       mode = [ "n" ];
     }
     {
+      action = "<cmd>Lspsaga outline<CR>";
+      key = "<leader>go";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga show_buf_diagnostics<CR>";
+      key = "<leader>ge";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga show_workspace_diagnostics<CR>";
+      key = "<leader>gE";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga finder<CR>";
+      key = "<leader>gf";
+      mode = [ "n" ];
+    }
+    {
       action = ":";
       key = "<leader>c";
       mode = [ "n" ];
@@ -73,6 +97,11 @@
     {
       action = "<cmd>Oil<CR>";
       key = "<leader>fe";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>UndotreeToggle<CR>";
+      key = "<leader>fu";
       mode = [ "n" ];
     }
     {
