@@ -1,56 +1,56 @@
 {
- plugins.which-key = {
-   enable = true;
-   registrations = {
-   "<leader>." = "Terminal";
-   "<leader>c" = "Command";
-   "<leader>q" = "Quit";
-   "<leader>f" = "Files";
-   "<leader>g" = "Lsp";
-   "<leader>gh" = "Show Documentation";
-   "<leader>gd" = "Go to Definition";
-   "<leader>go" = "Outline";
-   "<leader>ge" = "File Errors";
-   "<leader>gE" = "Project Errors";
-   "<leader>gr" = "Rename Symbol";
-   "<leader>ga" = "Code Actions";
-   "<leader>fe" = "Explorer";
-   "<leader>fu" = "Undo Tree";
-   "<leader>fs" = "Save File";
-   "<leader>ff" = "Project Files";
-   "<leader>fg" = "Grep Files";
-   "<leader>fd" = "Close File";
-   "<leader>fF" = "Find Files";
-   "<leader>s" = "Grep buffer";
-   "<leader>w" = "Window";
-   "<leader>wi" = "Swap window";
-   "<leader>ws" = "Split vertically";
-   "<leader>wv" = "Split horizontally";
-   "<leader>wj" = "Move Down";
-   "<leader>wk" = "Move Up";
-   "<leader>wh" = "Move Left";
-   "<leader>wl" = "Move Right";
-   "<leader>wJ" = "Decrease Height";
-   "<leader>wK" = "Increase Height";
-   "<leader>wH" = "Decrease Width";
-   "<leader>wL" = "Increase Width";
-   "<leader>wd" = "Close Pane";
-   "<leader>wq" = "Quit Vim";
-   };
- };
- keymaps = [
+  plugins.which-key = {
+    enable = true;
+    registrations = {
+      "<leader>." = "Terminal";
+      "<leader>c" = "Command";
+      "<leader>q" = "Quit";
+      "<leader>f" = "Files";
+      "<leader>g" = "Lsp";
+      "<leader>gh" = "Show Documentation";
+      "<leader>gd" = "Go to Definition";
+      "<leader>go" = "Outline";
+      "<leader>ge" = "File Errors";
+      "<leader>gE" = "Project Errors";
+      "<leader>gr" = "Rename Symbol";
+      "<leader>ga" = "Code Actions";
+      "<leader>fe" = "Explorer";
+      "<leader>fu" = "Undo Tree";
+      "<leader>fs" = "Save File";
+      "<leader>ff" = "Project Files";
+      "<leader>fg" = "Grep Files";
+      "<leader>fd" = "Close File";
+      "<leader>fF" = "Find Files";
+      "<leader>s" = "Grep buffer";
+      "<leader>w" = "Window";
+      "<leader>wi" = "Swap window";
+      "<leader>ws" = "Split vertically";
+      "<leader>wv" = "Split horizontally";
+      "<leader>wj" = "Move Down";
+      "<leader>wk" = "Move Up";
+      "<leader>wh" = "Move Left";
+      "<leader>wl" = "Move Right";
+      "<leader>wJ" = "Decrease Height";
+      "<leader>wK" = "Increase Height";
+      "<leader>wH" = "Decrease Width";
+      "<leader>wL" = "Increase Width";
+      "<leader>wd" = "Close Pane";
+      "<leader>wq" = "Quit Vim";
+    };
+  };
+  keymaps = [
     {
-    action = "<cmd>Lspsaga term_toggle<CR>";
+      action = "<cmd>Lspsaga term_toggle<CR>";
       key = "<A-.>";
       mode = [ "n" "t" ];
     }
     {
-    action = "<cmd>qall<CR>";
+      action = "<cmd>qall<CR>";
       key = "<leader>q";
       mode = [ "n" ];
     }
     {
-    action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      action = "<cmd>lua vim.lsp.buf.definition()<CR>";
       key = "<leader>gd";
       mode = [ "n" ];
     }
