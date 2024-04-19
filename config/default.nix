@@ -1,7 +1,13 @@
 {
   # Import all your configuration modules here
-  imports =
-    [ ./colorscheme.nix ./basemap.nix ./plugins.nix ./lsp.nix ./which-key.nix ];
+  imports = [
+    ./colorscheme.nix
+    ./basemap.nix
+    ./barbar.nix
+    ./plugins.nix
+    ./lsp.nix
+    ./which-key.nix
+  ];
   config.globals.mapleader = " ";
   config.opts = {
     number = true;
