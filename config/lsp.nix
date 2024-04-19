@@ -63,7 +63,10 @@
             end
       '';
       sources = {
-        formatting = { nixfmt.enable = true; };
+        formatting = {
+          nixfmt.enable = true;
+          phpcsfixer.enable = true;
+        };
         diagnostics = {
           golangci_lint.enable = true;
           phpstan.enable = true;

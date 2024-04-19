@@ -2,6 +2,7 @@
   plugins = {
     telescope = {
       enable = true;
+      extensions.fzf-native.enable = true;
       keymaps = {
         "<F1>" = {
           action = "git_files";
