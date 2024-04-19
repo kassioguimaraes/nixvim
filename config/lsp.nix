@@ -56,6 +56,7 @@
     cmp-nvim-lsp.enable = true;
     copilot-cmp.enable = true;
     none-ls = {
+      enableLspFormat = true;
       enable = true;
       shouldAttach = ''
         function(bufnr)
@@ -63,10 +64,7 @@
             end
       '';
       sources = {
-        formatting = {
-          nixfmt.enable = true;
-          phpcsfixer.enable = true;
-        };
+        formatting = { nixfmt.enable = true; };
         diagnostics = {
           golangci_lint.enable = true;
           phpstan.enable = true;
