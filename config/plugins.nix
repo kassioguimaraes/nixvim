@@ -2,6 +2,29 @@
   plugins = {
     telescope = {
       enable = true;
+      settings = {
+        defaults = {
+          file_ignore_patterns = [
+            "^.git/"
+            "^vendor/"
+            "^node_modules/"
+          ];
+          layout_config = { prompt_position = "top"; };
+          mappings = {
+            i = {
+              "<A-j>" = {
+                __raw = "require('telescope.actions').move_selection_next";
+              };
+              "<A-k>" = {
+                __raw = "require('telescope.actions').move_selection_previous";
+              };
+            };
+          };
+          selection_caret = "> ";
+          set_env = { COLORTERM = "truecolor"; };
+          sorting_strategy = "ascending";
+        };
+      };
       extensions.fzf-native.enable = true;
       keymaps = {
         "<F1>" = {

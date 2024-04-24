@@ -12,8 +12,8 @@
     keymaps.goTo3 = "<A-3>";
     keymaps.goTo4 = "<A-4>";
     keymaps.goTo5 = "<A-5>";
-    keymaps.movePrevious = "<A-j>";
-    keymaps.moveNext = "<A-k>";
+    keymaps.previous = "<A-a>";
+    keymaps.next = "<A-d>";
     keymaps.pin = "<A-'>";
   };
 }

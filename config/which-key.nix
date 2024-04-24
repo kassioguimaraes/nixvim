@@ -17,7 +17,7 @@
       "<leader>fe" = "Explorer";
       "<leader>fu" = "Undo Tree";
       "<leader>fs" = "Save File";
-      "<leader>ff" = "Project Files";
+      "<leader>ff" = "Format File";
       "<leader>fg" = "Grep Files";
       "<leader>fd" = "Close File";
       "<leader>fF" = "Find Files";
