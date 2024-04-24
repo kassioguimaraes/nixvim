@@ -48,7 +48,7 @@
     };
     luasnip.enable = true;
     cmp_luasnip.enable = true;
-    lsp-format.enable = true;
+    #lsp-format.enable = true;
     lspsaga = {
       enable = true;
       symbolInWinbar.enable = false;
@@ -56,7 +56,7 @@
     cmp-nvim-lsp.enable = true;
     copilot-cmp.enable = true;
     none-ls = {
-      enableLspFormat = true;
+      #enableLspFormat = true;
       enable = true;
       shouldAttach = ''
         function(bufnr)

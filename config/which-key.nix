@@ -110,13 +110,8 @@
       mode = [ "n" ];
     }
     {
-      action = "<cmd>Telescope git_files<CR>";
+      action = "<cmd>lua vim.lsp.buf.format()<CR>";
       key = "<leader>ff";
-      mode = [ "n" ];
-    }
-    {
-      action = "<cmd>Telescope find_files<CR>";
-      key = "<leader>fF";
       mode = [ "n" ];
     }
     {
