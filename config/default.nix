@@ -11,6 +11,7 @@
   config.globals.mapleader = " ";
   config.opts = {
     number = true;
+    background = "light";
     tabstop = 4;
     shiftwidth = 4;
     expandtab = true;
