@@ -12,7 +12,7 @@
         svelte.enable = true;
         tailwindcss.enable = true;
         tsserver.enable = true;
-        pylsp.enable = true;
+        pyright.enable = true;
         nixd.enable = true;
         intelephense.enable = true;
       };
@@ -33,12 +33,13 @@
           "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         };
-        snippet.expand = ''
+        snippet.expand =
           "function(args) require('luasnip').lsp_expand(args.body) end";
-        '';
 
         sources = [
           { name = "nvim_lsp"; }
+          { name = "luasnip"; }
+          { name = "nvim_lsp_signature_help"; }
           { name = "copilot"; }
           { name = "path"; }
           { name = "buffer"; }
@@ -48,6 +49,7 @@
     };
     luasnip.enable = true;
     cmp_luasnip.enable = true;
+    cmp-nvim-lsp-signature-help.enable = true;
     #lsp-format.enable = true;
     lspsaga = {
       enable = true;
@@ -64,7 +66,11 @@
             end
       '';
       sources = {
-        formatting = { nixfmt.enable = true; };
+        formatting = {
+          nixfmt.enable = true;
+          rustywind.enable = true;
+          black.enable = true;
+        };
         diagnostics = {
           golangci_lint.enable = true;
           phpstan.enable = true;
