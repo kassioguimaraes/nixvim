@@ -56,7 +56,7 @@
       enableSurround = true;
     };
     #git
-    neogit = { enable = true; };
+    lazygit.enable = true;
     diffview.enable = true;
     fugitive.enable = true;
     gitsigns.enable = true;

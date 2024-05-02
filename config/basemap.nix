@@ -6,7 +6,7 @@
       mode = [ "n" ];
     }
     {
-      action = "<cmd>Neogit<CR>";
+      action = "<cmd>LazyGit<CR>";
       key = "<F5>";
       mode = [ "n" ];
     }
