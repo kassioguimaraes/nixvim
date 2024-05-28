@@ -20,5 +20,6 @@
     winbar = "";
     smartcase = true;
     signcolumn = "yes";
+    title = true;
   };
 }

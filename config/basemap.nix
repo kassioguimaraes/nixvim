@@ -5,6 +5,43 @@
       key = "<F4>";
       mode = [ "n" ];
     }
+
+    {
+      action = "<cmd>nohlsearch<CR>";
+      key = "<esc>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope find_files<CR>";
+      key = "<F1>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope live_grep<CR>";
+      key = "<F2>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope git_files<CR>";
+      key = "<F6>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope git_status<CR>";
+      key = "<F7>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope git_commits<CR>";
+      key = "<F8>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope git_branches<CR>";
+      key = "<F9>";
+      mode = [ "n" ];
+
+    }
     {
       action = "<cmd>LazyGit<CR>";
       key = "<F5>";
