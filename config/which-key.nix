@@ -3,7 +3,7 @@
     enable = true;
     registrations = {
       "<leader>." = "Terminal";
-      "<leader>c" = "Command";
+      "<leader>x" = "Command";
       "<leader>q" = "Quit";
       "<leader>f" = "Files";
       "<leader>g" = "Lsp";
@@ -35,7 +35,14 @@
       "<leader>wH" = "Decrease Width";
       "<leader>wL" = "Increase Width";
       "<leader>wd" = "Close Pane";
-      "<leader>wq" = "Quit Vim";
+      "<leader>wq" = "Write and Quit Vim";
+      "<leader>cc" = "Custom Prompt";
+      "<leader>ct" = "Write Tests";
+      "<leader>cd" = "Read Docs";
+      "<leader>cf" = "Fix the bug";
+      "<leader>ci" = "Improve this code";
+      "<leader>cr" = "Review this code";
+      "<leader>cw" = "Show Copilot Window";
     };
   };
   keymaps = [
@@ -188,6 +195,47 @@
       action = "<cmd>q<CR>";
       key = "<leader>wq";
       mode = [ "n" ];
+    }
+    #copilot chat
+    {
+      action = ":CopilotChat ";
+      key = "<leader>cc";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatTests<CR>";
+      key = "<leader>ct";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatFix<CR>";
+      key = "<leader>cf";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatExplain<CR>";
+      key = "<leader>ce";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatReview<CR>";
+      key = "<leader>cr";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatOptimize<CR>";
+      key = "<leader>ci";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatDocs<CR>";
+      key = "<leader>cd";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>CopilotChatToggle<CR>";
+      key = "<leader>cw";
+      mode = [ "n" "v" ];
     }
   ];
 }

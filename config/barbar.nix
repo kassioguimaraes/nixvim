@@ -1,19 +1,19 @@
 {
   plugins.barbar = {
     enable = true;
-      extraOptions = {
+      settings = {
         icons = {
           modified = { button = "●"; };
           pinned = { button = "⚓"; filename = true; };
         };
       };
-    keymaps.goTo1 = "<A-1>";
-    keymaps.goTo2 = "<A-2>";
-    keymaps.goTo3 = "<A-3>";
-    keymaps.goTo4 = "<A-4>";
-    keymaps.goTo5 = "<A-5>";
-    keymaps.previous = "<A-a>";
-    keymaps.next = "<A-d>";
-    keymaps.pin = "<A-'>";
+    keymaps.goTo1.key = "<A-1>";
+    keymaps.goTo2.key = "<A-2>";
+    keymaps.goTo3.key = "<A-3>";
+    keymaps.goTo4.key = "<A-4>";
+    keymaps.goTo5.key = "<A-5>";
+    keymaps.previous.key = "<A-a>";
+    keymaps.next.key = "<A-d>";
+    keymaps.pin.key = "<A-'>";
   };
 }
