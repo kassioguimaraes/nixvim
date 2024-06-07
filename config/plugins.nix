@@ -4,11 +4,7 @@
       enable = true;
       settings = {
         defaults = {
-          file_ignore_patterns = [
-            "^.git/"
-            "^vendor/"
-            "^node_modules/"
-          ];
+          file_ignore_patterns = [ "^.git/" "^vendor/" "^node_modules/" ];
           layout_config = { prompt_position = "top"; };
           mappings = {
             i = {
@@ -67,6 +63,7 @@
       enable = true;
       indent = true;
     };
+    treesitter-textobjects.enable = true;
     lastplace.enable = true;
     better-escape = {
       enable = true;
@@ -78,7 +75,27 @@
       suggestion.enabled = false;
       panel.enabled = false;
     };
+    mini = {
+      enable = true;
+      modules = {
+        ai = {
+          n_lines = 50;
+          search_method = "cover_or_next";
+          custom_textobjects = {
+            f.__raw =
+              "require('mini.ai').gen_spec.treesitter({ a = '@function.outer', i = '@function.inner' })";
+            c.__raw =
+              "require('mini.ai').gen_spec.treesitter({ a = '@class.outer', i = '@class.inner' })";
+            i.__raw =
+              "require('mini.ai').gen_spec.treesitter({ a = '@conditional.outer', i = '@conditional.inner' })";
+            t.__raw =
+              "require('mini.ai').gen_spec.treesitter({ a = '@comment.outer', i = '@comment.outer' })";
+            a.__raw =
+              "require('mini.ai').gen_spec.treesitter({ a = '@parameter.outer', i = '@parameter.outer' })";
+          };
+        };
+      };
+    };
 
   };
-
 }
