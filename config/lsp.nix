@@ -10,6 +10,7 @@
         };
         gopls.enable = true;
         svelte.enable = true;
+        volar.enable = true;
         tailwindcss.enable = true;
         tsserver.enable = true;
         pyright.enable = true;
