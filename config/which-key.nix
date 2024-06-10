@@ -4,6 +4,7 @@
     registrations = {
       "<leader>." = "Terminal";
       "<leader>x" = "Command";
+      "<leader>c" = "Copilot";
       "<leader>q" = "Quit";
       "<leader>f" = "Files";
       "<leader>g" = "Lsp";
@@ -39,7 +40,8 @@
       "<leader>cc" = "Custom Prompt";
       "<leader>ct" = "Write Tests";
       "<leader>cd" = "Read Docs";
-      "<leader>cf" = "Fix the bug";
+      "<leader>cf" = "Fix this code";
+      "<leader>ce" = "Explain this code";
       "<leader>ci" = "Improve this code";
       "<leader>cr" = "Review this code";
       "<leader>cw" = "Show Copilot Window";
