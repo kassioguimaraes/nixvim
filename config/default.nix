@@ -22,4 +22,10 @@
     signcolumn = "yes";
     title = true;
   };
+
+  config.autoCmd = [{
+    event = "FileType";
+    pattern = "blade";
+    command = "set filetype=html";
+  }];
 }

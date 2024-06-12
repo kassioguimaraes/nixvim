@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   plugins = {
     lsp = {
@@ -14,6 +15,7 @@
         tailwindcss.enable = true;
         tsserver.enable = true;
         pyright.enable = true;
+        html.enable = true;
         nixd.enable = true;
         intelephense.enable = true;
       };
