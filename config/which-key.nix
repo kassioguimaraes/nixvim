@@ -100,7 +100,7 @@
     }
     {
       action = ":";
-      key = "<leader>c";
+      key = "<leader>x";
       mode = [ "n" ];
     }
     {

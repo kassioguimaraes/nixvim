@@ -63,8 +63,10 @@
       enable = true;
       indent = true;
     };
+    comment.enable = true;
     treesitter-textobjects.enable = true;
     lastplace.enable = true;
+    noice.enable = true;
     better-escape = {
       enable = true;
       mapping = [ "jj" ];

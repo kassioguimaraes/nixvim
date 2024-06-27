@@ -1,9 +1,9 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   plugins = {
     lsp = {
       enable = true;
       servers = {
+        jsonls.enable = true;
         rust-analyzer = {
           enable = true;
           installRustc = true;
@@ -23,16 +23,15 @@
     };
     cmp = {
       enable = true;
-      #preselect = "None";
       autoEnableSources = true;
       settings = {
-
+        preselect = "cmp.PreselectMode.None";
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-e>" = "cmp.mapping.close()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<CR>" = "cmp.mapping.confirm({ select = false })";
           "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         };
@@ -59,7 +58,10 @@
       symbolInWinbar.enable = false;
     };
     cmp-nvim-lsp.enable = true;
-    copilot-cmp.enable = true;
+    copilot-cmp = {
+      enable = true;
+      fixPairs = true;
+    };
     none-ls = {
       #enableLspFormat = true;
       enable = true;
