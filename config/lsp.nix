@@ -3,6 +3,7 @@
     lsp = {
       enable = true;
       servers = {
+        yamlls.enable = true;
         jsonls.enable = true;
         rust-analyzer = {
           enable = true;
@@ -65,7 +66,7 @@
     none-ls = {
       #enableLspFormat = true;
       enable = true;
-      shouldAttach = ''
+      settings.should_attach = ''
         function(bufnr)
                 return not vim.api.nvim_buf_get_name(bufnr):match("^git://")
             end
