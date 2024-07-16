@@ -61,7 +61,7 @@
     undotree.enable = true;
     treesitter = {
       enable = true;
-      indent = true;
+      settings = { indent.enable = true; };
     };
     comment.enable = true;
     treesitter-textobjects.enable = true;

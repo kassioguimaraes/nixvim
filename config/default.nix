@@ -1,5 +1,4 @@
-{
-  # Import all your configuration modules here
+{ pkgs, ... }: {
   imports = [
     ./colorscheme.nix
     ./basemap.nix
@@ -22,10 +21,6 @@
     signcolumn = "yes";
     title = true;
   };
+  config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
 
-  config.autoCmd = [{
-    event = "FileType";
-    pattern = "blade";
-    command = "set filetype=html";
-  }];
 }
