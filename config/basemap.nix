@@ -17,6 +17,11 @@
       mode = [ "n" ];
     }
     {
+      action = "<Nop>";
+      key = "<F1>";
+      mode = [ "i" "c" "v" "s" "x" "t" ];
+    }
+    {
       action = "<cmd>Telescope live_grep<CR>";
       key = "<F2>";
       mode = [ "n" ];

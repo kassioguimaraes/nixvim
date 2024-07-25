@@ -69,7 +69,7 @@
     noice.enable = true;
     better-escape = {
       enable = true;
-      mapping = [ "jj" ];
+      settings.mapping = [ "jj" ];
     };
     copilot-lua = {
       enable = true;
