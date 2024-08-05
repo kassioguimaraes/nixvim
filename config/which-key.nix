@@ -1,51 +1,180 @@
 {
   plugins.which-key = {
     enable = true;
-    registrations = {
-      "<leader>." = "Terminal";
-      "<leader>x" = "Command";
-      "<leader>c" = "Copilot";
-      "<leader>q" = "Quit";
-      "<leader>f" = "Files";
-      "<leader>g" = "Lsp";
-      "<leader>gh" = "Show Documentation";
-      "<leader>gd" = "Go to Definition";
-      "<leader>go" = "Outline";
-      "<leader>ge" = "File Errors";
-      "<leader>gE" = "Project Errors";
-      "<leader>gr" = "Rename Symbol";
-      "<leader>ga" = "Code Actions";
-      "<leader>fe" = "Explorer";
-      "<leader>fu" = "Undo Tree";
-      "<leader>fs" = "Save File";
-      "<leader>ff" = "Format File";
-      "<leader>fg" = "Grep Files";
-      "<leader>fd" = "Close File";
-      "<leader>fF" = "Find Files";
-      "<leader>s" = "Grep buffer";
-      "<leader>w" = "Window";
-      "<leader>wi" = "Swap window";
-      "<leader>ws" = "Split vertically";
-      "<leader>wv" = "Split horizontally";
-      "<leader>wj" = "Move Down";
-      "<leader>wk" = "Move Up";
-      "<leader>wh" = "Move Left";
-      "<leader>wl" = "Move Right";
-      "<leader>wJ" = "Decrease Height";
-      "<leader>wK" = "Increase Height";
-      "<leader>wH" = "Decrease Width";
-      "<leader>wL" = "Increase Width";
-      "<leader>wd" = "Close Pane";
-      "<leader>wq" = "Write and Quit Vim";
-      "<leader>cc" = "Custom Prompt";
-      "<leader>ct" = "Write Tests";
-      "<leader>cd" = "Read Docs";
-      "<leader>cf" = "Fix this code";
-      "<leader>ce" = "Explain this code";
-      "<leader>ci" = "Improve this code";
-      "<leader>cr" = "Review this code";
-      "<leader>cw" = "Show Copilot Window";
-    };
+    settings.spec = [
+      {
+        __unkeyed-1 = "<leader>.";
+        desc = "Terminal";
+      }
+      {
+        __unkeyed-1 = "<leader>x";
+        desc = "Command";
+      }
+      {
+        __unkeyed-1 = "<leader>c";
+        desc = "Copilot";
+      }
+      {
+        __unkeyed-1 = "<leader>q";
+        desc = "Quit";
+      }
+      {
+        __unkeyed-1 = "<leader>f";
+        desc = "Files";
+      }
+      {
+        __unkeyed-1 = "<leader>g";
+        desc = "Lsp";
+      }
+      {
+        __unkeyed-1 = "<leader>gh";
+        desc = "Show Documentation";
+      }
+      {
+        __unkeyed-1 = "<leader>gd";
+        desc = "Go to Definition";
+      }
+      {
+        __unkeyed-1 = "<leader>go";
+        desc = "Outline";
+      }
+      {
+        __unkeyed-1 = "<leader>ge";
+        desc = "File Errors";
+      }
+      {
+        __unkeyed-1 = "<leader>gE";
+        desc = "Project Errors";
+      }
+      {
+        __unkeyed-1 = "<leader>gr";
+        desc = "Rename Symbol";
+      }
+      {
+        __unkeyed-1 = "<leader>ga";
+        desc = "Code Actions";
+      }
+      {
+        __unkeyed-1 = "<leader>fe";
+        desc = "Explorer";
+      }
+      {
+        __unkeyed-1 = "<leader>fu";
+        desc = "Undo Tree";
+      }
+      {
+        __unkeyed-1 = "<leader>fs";
+        desc = "Save File";
+      }
+      {
+        __unkeyed-1 = "<leader>ff";
+        desc = "Format File";
+      }
+      {
+        __unkeyed-1 = "<leader>fg";
+        desc = "Grep Files";
+      }
+      {
+        __unkeyed-1 = "<leader>fd";
+        desc = "Close File";
+      }
+      {
+        __unkeyed-1 = "<leader>fF";
+        desc = "Find Files";
+      }
+      {
+        __unkeyed-1 = "<leader>s";
+        desc = "Grep buffer";
+      }
+      {
+        __unkeyed-1 = "<leader>w";
+        desc = "Window";
+      }
+      {
+        __unkeyed-1 = "<leader>wi";
+        desc = "Swap window";
+      }
+      {
+        __unkeyed-1 = "<leader>ws";
+        desc = "Split vertically";
+      }
+      {
+        __unkeyed-1 = "<leader>wv";
+        desc = "Split horizontally";
+      }
+      {
+        __unkeyed-1 = "<leader>wj";
+        desc = "Move Down";
+      }
+      {
+        __unkeyed-1 = "<leader>wk";
+        desc = "Move Up";
+      }
+      {
+        __unkeyed-1 = "<leader>wh";
+        desc = "Move Left";
+      }
+      {
+        __unkeyed-1 = "<leader>wl";
+        desc = "Move Right";
+      }
+      {
+        __unkeyed-1 = "<leader>wJ";
+        desc = "Decrease Height";
+      }
+      {
+        __unkeyed-1 = "<leader>wK";
+        desc = "Increase Height";
+      }
+      {
+        __unkeyed-1 = "<leader>wH";
+        desc = "Decrease Width";
+      }
+      {
+        __unkeyed-1 = "<leader>wL";
+        desc = "Increase Width";
+      }
+      {
+        __unkeyed-1 = "<leader>wd";
+        desc = "Close Pane";
+      }
+      {
+        __unkeyed-1 = "<leader>wq";
+        desc = "Write and Quit Vim";
+      }
+      {
+        __unkeyed-1 = "<leader>cc";
+        desc = "Custom Prompt";
+      }
+      {
+        __unkeyed-1 = "<leader>ct";
+        desc = "Write Tests";
+      }
+      {
+        __unkeyed-1 = "<leader>cd";
+        desc = "Read Docs";
+      }
+      {
+        __unkeyed-1 = "<leader>cf";
+        desc = "Fix this code";
+      }
+      {
+        __unkeyed-1 = "<leader>ce";
+        desc = "Explain this code";
+      }
+      {
+        __unkeyed-1 = "<leader>ci";
+        desc = "Improve this code";
+      }
+      {
+        __unkeyed-1 = "<leader>cr";
+        desc = "Review this code";
+      }
+      {
+        __unkeyed-1 = "<leader>cw";
+        desc = "Show Copilot Window";
+      }
+    ];
   };
   keymaps = [
     {

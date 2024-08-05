@@ -61,7 +61,13 @@
     undotree.enable = true;
     treesitter = {
       enable = true;
-      settings = { indent.enable = true; };
+      settings = {
+        indent.enable = true;
+        highlight = {
+          enable = true;
+          additional_vim_regex_highlighting = false;
+        };
+      };
     };
     comment.enable = true;
     treesitter-textobjects.enable = true;

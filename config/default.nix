@@ -9,6 +9,7 @@
   ];
   config.globals.mapleader = " ";
   config.opts = {
+    syntax="on";
     number = true;
     background = "light";
     tabstop = 4;
