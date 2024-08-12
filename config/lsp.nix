@@ -7,8 +7,8 @@
         jsonls.enable = true;
         rust-analyzer = {
           enable = true;
-          installRustc = true;
-          installCargo = true;
+          installRustc = false;
+          installCargo = false;
         };
         gopls.enable = true;
         svelte.enable = true;
