@@ -73,10 +73,10 @@
     treesitter-textobjects.enable = true;
     lastplace.enable = true;
     noice.enable = true;
-    better-escape = {
-      enable = true;
-      settings.mapping = [ "jj" ];
-    };
+    #better-escape = {
+    #  enable = true;
+    #  settings.mapping = [ "jk" ];
+    #};
     copilot-lua = {
       enable = true;
       filetypes = { "*" = true; };
