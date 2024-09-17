@@ -25,7 +25,7 @@
   #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
     config.autoCmd = [{
       command = "set filetype=html";
-      pattern = ".*.blade.php";
+      pattern = "*.blade.php";
       event = [ "BufRead" "BufNewFile" ];
     }];
 
