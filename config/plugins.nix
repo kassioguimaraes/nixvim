@@ -5,7 +5,16 @@
       settings = {
         defaults = {
           file_ignore_patterns = [ "^.git/" "^vendor/" "^node_modules/" ];
-          layout_config = { prompt_position = "top"; };
+          layout_config = {
+            prompt_position = "top";
+            horizontal = {
+              padding = 0;
+              width = 0.98;
+              preview_width = 0.5;
+            };
+            vertical = { height = 0.98; };
+
+          };
           mappings = {
             i = {
               "<A-j>" = {
@@ -24,16 +33,21 @@
       extensions.fzf-native.enable = true;
       keymaps = {
         "<F1>" = {
-          action = "git_files";
-          options.desc = "Telescope git Files";
-        };
-        "<s-F1>" = {
           action = "find_files";
           options.desc = "Telescope find Files";
+        };
+        "<s-F1>" = {
+          action = "git";
+          options.desc = "Telescope git Files";
         };
         "<F2>" = {
           action = "live_grep";
           options.desc = "Telescope grep project";
+        };
+
+        "<F3>" = {
+          action = "buffers";
+          options.desc = "Telescope buffers";
         };
       };
 
