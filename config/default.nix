@@ -9,7 +9,7 @@
   ];
   config.globals.mapleader = " ";
   config.opts = {
-    syntax="on";
+    syntax = "on";
     number = true;
     background = "light";
     tabstop = 4;
@@ -22,6 +22,11 @@
     signcolumn = "yes";
     title = true;
   };
-  config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
+  #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
+    config.autoCmd = [{
+      command = "set filetype=html";
+      pattern = ".*.blade.php";
+      event = [ "BufRead" "BufNewFile" ];
+    }];
 
 }

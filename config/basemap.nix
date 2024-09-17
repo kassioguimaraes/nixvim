@@ -12,8 +12,13 @@
       mode = [ "n" ];
     }
     {
-      action = "<cmd>Telescope find_files<CR>";
+      action = "<cmd>Telescope git_files<CR>";
       key = "<F1>";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Telescope find_files<CR>";
+      key = "<S-F1>";
       mode = [ "n" ];
     }
     {
