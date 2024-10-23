@@ -5,7 +5,7 @@
       servers = {
         yamlls.enable = true;
         jsonls.enable = true;
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installRustc = false;
           installCargo = false;
@@ -13,7 +13,7 @@
         gopls.enable = true;
         svelte.enable = true;
         tailwindcss.enable = true;
-        ts-ls = {
+        ts_ls = {
           enable = true;
           filetypes = [
             "typescript"
@@ -45,6 +45,7 @@
         };
         nixd.enable = true;
         intelephense.enable = true;
+        intelephense.package = pkgs.nodePackages_latest.intelephense;
       };
 
     };

@@ -71,7 +71,7 @@
     fugitive.enable = true;
     gitsigns.enable = true;
     cursorline.enable = true;
-    surround.enable = true;
+    vim-surround.enable = true;
     undotree.enable = true;
     treesitter = {
       enable = true;
@@ -83,6 +83,7 @@
         };
       };
     };
+    web-devicons.enable = true;
     comment.enable = true;
     treesitter-textobjects.enable = true;
     lastplace.enable = true;
