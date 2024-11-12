@@ -95,6 +95,10 @@
         desc = "Window";
       }
       {
+        __unkeyed-1 = "<leader>wf";
+        desc = "Close other windows";
+      }
+      {
         __unkeyed-1 = "<leader>wi";
         desc = "Swap window";
       }
@@ -323,6 +327,11 @@
     {
       action = "<C-W>r";
       key = "<leader>wi";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>only<CR>";
+      key = "<leader>wf";
       mode = [ "n" ];
     }
     {
