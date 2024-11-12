@@ -73,6 +73,7 @@
           { name = "copilot"; }
           { name = "path"; }
           { name = "buffer"; }
+          { name = "orgmode"; }
         ];
 
       };

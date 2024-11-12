@@ -27,6 +27,10 @@
         desc = "Lsp";
       }
       {
+        __unkeyed-1 = "<leader>o";
+        desc = "Org mode";
+      }
+      {
         __unkeyed-1 = "<leader>gh";
         desc = "Show Documentation";
       }
@@ -173,6 +177,10 @@
       {
         __unkeyed-1 = "<leader>cw";
         desc = "Show Copilot Window";
+      }
+      {
+        __unkeyed-1 = "<leader>of";
+        desc = "Org files";
       }
     ];
   };
@@ -366,6 +374,12 @@
     {
       action = "<cmd>CopilotChatToggle<CR>";
       key = "<leader>cw";
+      mode = [ "n" "v" ];
+    }
+        #orgmode
+    {
+      action = "<cmd>e ~/org<CR>";
+      key = "<leader>of";
       mode = [ "n" "v" ];
     }
   ];

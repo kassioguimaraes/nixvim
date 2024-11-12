@@ -6,6 +6,7 @@
     ./plugins.nix
     ./lsp.nix
     ./which-key.nix
+    ./org.nix
   ];
   config.globals.mapleader = " ";
   config.opts = {
@@ -21,6 +22,8 @@
     smartcase = true;
     signcolumn = "yes";
     title = true;
+    conceallevel = 2;
+    concealcursor = "nc";
   };
   #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
     config.autoCmd = [{
