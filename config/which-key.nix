@@ -305,22 +305,22 @@
       mode = [ "n" ];
     }
     {
-      action = "<cmd>resize -2<CR>";
+      action = "<cmd>resize -6<CR>";
       key = "<leader>wJ";
       mode = [ "n" ];
     }
     {
-      action = "<cmd>resize +2<CR>";
+      action = "<cmd>resize +6<CR>";
       key = "<leader>wK";
       mode = [ "n" ];
     }
     {
-      action = "<cmd>vertical resize -2<CR>";
+      action = "<cmd>vertical resize -6<CR>";
       key = "<leader>wH";
       mode = [ "n" ];
     }
     {
-      action = "<cmd>vertical resize +2<CR>";
+      action = "<cmd>vertical resize +6<CR>";
       key = "<leader>wL";
       mode = [ "n" ];
     }
