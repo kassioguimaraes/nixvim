@@ -22,14 +22,22 @@
     smartcase = true;
     signcolumn = "yes";
     title = true;
+
+    titlestring = ''%{expand("%:h:t")}/%{expand("%:t")}'';
     conceallevel = 2;
     concealcursor = "nc";
   };
   #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
-    config.autoCmd = [{
+  config.autoCmd = [
+    {
       command = "set filetype=html";
       pattern = "*.blade.php";
       event = [ "BufRead" "BufNewFile" ];
-    }];
+    }
+    {
+        command = ''let &titlestring = ' ' . expand("%:p:h:t") . '/' . expand("%:t")'';
+      event = [ "BufEnter" ];
+    }
+  ];
 
 }

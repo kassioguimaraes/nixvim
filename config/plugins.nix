@@ -87,11 +87,11 @@
     comment.enable = true;
     treesitter-textobjects.enable = true;
     lastplace.enable = true;
-    noice.enable = true;
-    #better-escape = {
-    #  enable = true;
-    #  settings.mapping = [ "jk" ];
-    #};
+    noice.enable = false;
+    # better-escape = {
+    #   enable = true;
+    #   settings.mapping = [ "qq" ];
+    # };
     copilot-lua = {
       enable = true;
       filetypes = { "*" = true; };
