@@ -23,7 +23,7 @@
     signcolumn = "yes";
     title = true;
 
-    titlestring = ''%{expand("%:h:t")}/%{expand("%:t")}'';
+    titlestring = ''nv %{expand("%:h:t")}/%{expand("%:t")}'';
     conceallevel = 2;
     concealcursor = "nc";
   };
@@ -35,7 +35,7 @@
       event = [ "BufRead" "BufNewFile" ];
     }
     {
-        command = ''let &titlestring = ' ' . expand("%:p:h:t") . '/' . expand("%:t")'';
+        command = ''let &titlestring = 'nv ' . expand("%:p:h:t") . '/' . expand("%:t")'';
       event = [ "BufEnter" ];
     }
   ];
