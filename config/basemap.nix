@@ -5,7 +5,6 @@
       key = "<F4>";
       mode = [ "n" ];
     }
-
     {
       action = "<cmd>nohlsearch<CR>";
       key = "<esc>";

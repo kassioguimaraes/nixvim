@@ -1,5 +1,22 @@
 {
   plugins = {
+    lualine = {
+      enable = true;
+    };
+    better-escape = {
+      enable = true;
+      settings.mappings = {
+        i = {
+          j = {
+            j = "<Esc>";
+            k = "<Esc>";
+          };
+        };
+        # c = { c = { c = "<Esc>"; }; };
+        # s = { s = { s = "<Esc>"; }; };
+        # v = { v = { v = "<Esc>"; }; };
+      };
+    };
     telescope = {
       enable = true;
       settings = {
@@ -131,6 +148,7 @@
         };
       };
     };
+    emmet = { enable = true; };
 
   };
 }

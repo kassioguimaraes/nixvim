@@ -3,6 +3,10 @@
     enable = true;
     settings.spec = [
       {
+        __unkeyed-1 = "<leader>i";
+        desc = "Insert";
+      }
+      {
         __unkeyed-1 = "<leader>.";
         desc = "Terminal";
       }
@@ -185,6 +189,10 @@
       {
         __unkeyed-1 = "<leader>of";
         desc = "Org files";
+      }
+      {
+        __unkeyed-1 = "<leader>ih";
+        desc = "Insert html";
       }
     ];
   };
@@ -389,6 +397,16 @@
     {
       action = "<cmd>e ~/org<CR>";
       key = "<leader>of";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = "<cmd>e ~/org<CR>";
+      key = "<leader>of";
+      mode = [ "n" "v" ];
+    }
+    {
+      action = ":Emmet ";
+      key = "<leader>ih";
       mode = [ "n" "v" ];
     }
   ];
