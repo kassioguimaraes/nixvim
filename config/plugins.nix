@@ -1,22 +1,20 @@
 {
   plugins = {
-    lualine = {
-      enable = true;
-    };
-    better-escape = {
-      enable = true;
-      settings.mappings = {
-        i = {
-          j = {
-            j = "<Esc>";
-            k = "<Esc>";
-          };
-        };
-        # c = { c = { c = "<Esc>"; }; };
-        # s = { s = { s = "<Esc>"; }; };
-        # v = { v = { v = "<Esc>"; }; };
-      };
-    };
+    lualine = { enable = true; };
+    # better-escape = {
+    #   enable = true;
+    #   settings.mappings = {
+    #     i = {
+    #       j = {
+    #         j = "<Esc>";
+    #         k = "<Esc>";
+    #       };
+    #     };
+    #     # c = { c = { c = "<Esc>"; }; };
+    #     # s = { s = { s = "<Esc>"; }; };
+    #     # v = { v = { v = "<Esc>"; }; };
+    #   };
+    # };
     telescope = {
       enable = true;
       settings = {
@@ -85,6 +83,10 @@
     #git
     lazygit.enable = true;
     diffview.enable = true;
+    gitblame = {
+      enable = true;
+      settings.delay = 5000;
+    };
     fugitive.enable = true;
     gitsigns.enable = true;
     cursorline.enable = true;
