@@ -7,8 +7,8 @@
         jsonls.enable = true;
         rust_analyzer = {
           enable = true;
-          installRustc = false;
-          installCargo = false;
+          installRustc = true;
+          installCargo = true;
         };
         gopls.enable = true;
         svelte.enable = true;
@@ -89,7 +89,7 @@
     cmp-nvim-lsp.enable = true;
     copilot-cmp = {
       enable = true;
-      fixPairs = true;
+      settings.fixPairs = true;
     };
     none-ls = {
       #enableLspFormat = true;
@@ -106,6 +106,7 @@
           black.enable = true;
         };
         diagnostics = {
+          
           golangci_lint.enable = true;
           phpstan.enable = true;
         };

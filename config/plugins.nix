@@ -77,8 +77,10 @@
     };
     vim-matchup = {
       enable = true;
-      matchParen.enable = false;
-      enableSurround = true;
+      settings = {
+        matchparen.enabled = 0;
+        surround.enabled = 1;
+      };
     };
     #git
     lazygit.enable = true;
@@ -113,9 +115,14 @@
     # };
     copilot-lua = {
       enable = true;
-      filetypes = { "*" = true; };
-      suggestion.enabled = false;
-      panel.enabled = false;
+      settings = {
+        filetypes = {
+          "*" = true;
+          "md" = false;
+        };
+        suggestion.enabled = false;
+        panel.enabled = false;
+      };
     };
     copilot-chat = {
       enable = true;
