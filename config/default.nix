@@ -23,21 +23,11 @@
     signcolumn = "yes";
     title = true;
 
+
     titlestring = ''nv %{expand("%:h:t")}/%{expand("%:t")}'';
     conceallevel = 2;
     concealcursor = "nc";
   };
   #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
-  config.autoCmd = [
-    {
-      command = "set filetype=html";
-      pattern = "*.blade.php";
-      event = [ "BufRead" "BufNewFile" ];
-    }
-    {
-        command = ''let &titlestring = 'nv ' . expand("%:p:h:t") . '/' . expand("%:t")'';
-      event = [ "BufEnter" ];
-    }
-  ];
 
 }

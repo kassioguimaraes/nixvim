@@ -1,6 +1,7 @@
 {
   plugins = {
-    lualine = { enable = true; };
+    flash.enable = true;
+        #lualine = { enable = true; };
     # better-escape = {
     #   enable = true;
     #   settings.mappings = {
@@ -77,6 +78,7 @@
     };
     vim-matchup = {
       enable = true;
+      treesitter.enable = true;
       settings = {
         matchparen.enabled = 0;
         surround.enabled = 1;
@@ -91,7 +93,7 @@
     };
     fugitive.enable = true;
     gitsigns.enable = true;
-    cursorline.enable = true;
+    cursorline.enable = false;
     vim-surround.enable = true;
     undotree.enable = true;
     treesitter = {

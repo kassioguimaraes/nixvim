@@ -49,47 +49,39 @@
       };
 
     };
-    cmp = {
+    blink-cmp-copilot.enable = true;
+    blink-cmp = {
       enable = true;
-      autoEnableSources = true;
       settings = {
-        preselect = "cmp.PreselectMode.None";
-        mapping = {
-          "<C-Space>" = "cmp.mapping.complete()";
-          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-          "<C-e>" = "cmp.mapping.close()";
-          "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<CR>" = "cmp.mapping.confirm({ select = false })";
-          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+        sources = {
+          providers.copilot = {
+            async = true;
+            module = "blink-cmp-copilot";
+            name = "copilot";
+            score_offset = 100;
+          };
+          default = [ "lsp" "snippets" "path" "buffer" "copilot" ];
         };
-        snippet.expand =
-          "function(args) require('luasnip').lsp_expand(args.body) end";
-
-        sources = [
-          { name = "nvim_lsp"; }
-          { name = "luasnip"; }
-          { name = "nvim_lsp_signature_help"; }
-          { name = "copilot"; }
-          { name = "path"; }
-          { name = "buffer"; }
-          { name = "orgmode"; }
-        ];
+        completion.documentation.auto_show = true;
+        signature.enabled = true;
+        keymap = {
+          preset = "none";
+          "<Tab>" = [ "select_next" "fallback" ];
+          "<S-Tab>" = [ "select_prev" "fallback" ];
+          "<CR>" = [ "accept" "fallback" ];
+          "<C-d>" = [ "show" "show_documentation" "hide_documentation" ];
+          "<C-e>" = [ "hide" ];
+          "<C-j>" = [ "scroll_documentation_down" "fallback" ];
+          "<C-k>" = [ "scroll_documentation_up" "fallback" ];
+        };
 
       };
     };
     luasnip.enable = true;
-    cmp_luasnip.enable = true;
-    cmp-nvim-lsp-signature-help.enable = true;
     #lsp-format.enable = true;
     lspsaga = {
       enable = true;
       symbolInWinbar.enable = false;
-    };
-    cmp-nvim-lsp.enable = true;
-    copilot-cmp = {
-      enable = true;
-      settings.fixPairs = true;
     };
     none-ls = {
       #enableLspFormat = true;
@@ -106,7 +98,7 @@
           black.enable = true;
         };
         diagnostics = {
-          
+
           golangci_lint.enable = true;
           phpstan.enable = true;
         };
