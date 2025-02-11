@@ -161,5 +161,6 @@
     };
     emmet = { enable = true; };
 
+    smart-splits.enable = true;
   };
 }
