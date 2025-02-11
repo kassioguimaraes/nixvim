@@ -58,11 +58,19 @@
             async = true;
             module = "blink-cmp-copilot";
             name = "copilot";
-            score_offset = 100;
+            score_offset = -10;
           };
-          default = [ "lsp" "snippets" "path" "buffer" "copilot" ];
+          default = [ "lsp" "snippets" "buffer" "copilot" ];
+          #cmdline did nothing
+          #cmdline = [ ];
         };
-        completion.documentation.auto_show = true;
+        # disabled for now
+        completion.documentation.auto_show = false;
+
+        completion.list.selection = {
+          preselect = false;
+          auto_insert = false;
+        };
         signature.enabled = true;
         keymap = {
           preset = "none";

@@ -28,6 +28,6 @@
     conceallevel = 2;
     concealcursor = "nc";
   };
-  #config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
+  config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
 
 }
