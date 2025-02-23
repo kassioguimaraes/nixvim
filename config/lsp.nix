@@ -65,7 +65,7 @@
           #cmdline = [ ];
         };
         # disabled for now
-        completion.documentation.auto_show = false;
+        completion.documentation.auto_show = true;
 
         completion.list.selection = {
           preselect = false;

@@ -30,4 +30,6 @@
   };
   config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
 
+  config.diagnostics.severity_sort = true;
+
 }

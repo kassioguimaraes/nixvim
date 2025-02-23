@@ -218,6 +218,16 @@
       mode = [ "n" ];
     }
     {
+      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
+      key = "<leader>gn";
+      mode = [ "n" ];
+    }
+    {
+      action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
+      key = "<leader>gN";
+      mode = [ "n" ];
+    }
+    {
       action = "<cmd>Lspsaga rename<CR>";
       key = "<leader>gr";
       mode = [ "n" ];
