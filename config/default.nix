@@ -12,7 +12,7 @@
   config.opts = {
     syntax = "on";
     number = true;
-    background = "dark";
+    background = "light";
     tabstop = 4;
     shiftwidth = 4;
     expandtab = true;
