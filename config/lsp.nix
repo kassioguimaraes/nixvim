@@ -34,9 +34,8 @@
             #};
           };
         };
-        volar = {
+        vue_ls = {
           enable = true;
-          package = pkgs.vue-language-server;
         };
         pyright.enable = true;
         html = {
