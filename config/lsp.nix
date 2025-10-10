@@ -23,15 +23,15 @@
             "vue"
           ];
           extraOptions = {
-            init_options = {
-              plugins = [{
-                name = "@vue/typescript-plugin";
-                location = "${
-                    lib.getBin pkgs.vue-language-server
-                  }/lib/node_modules/@vue/language-server";
-                languages = [ "vue" ];
-              }];
-            };
+            #init_options = {
+            #  plugins = [{
+            #    name = "@vue/typescript-plugin";
+            #    location = "${
+            #        lib.getBin pkgs.vue-language-server
+            #      }/lib/node_modules/@vue/language-server";
+            #    languages = [ "vue" ];
+            #  }];
+            #};
           };
         };
         volar = {
@@ -61,8 +61,7 @@
             score_offset = 100;
           };
           default = [ "lsp" "snippets" "buffer" "copilot" ];
-          #cmdline did nothing
-          #cmdline = [ ];
+          cmdline = [ ];
         };
         # disabled for now
         completion.documentation.auto_show = true;
@@ -89,7 +88,7 @@
     #lsp-format.enable = true;
     lspsaga = {
       enable = true;
-      symbolInWinbar.enable = false;
+      settings.symbol_in_winbar.enable = true;
     };
     none-ls = {
       #enableLspFormat = true;
