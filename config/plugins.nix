@@ -2,7 +2,7 @@
   plugins = {
     easyescape.enable = true;
     flash.enable = true;
-        #lualine = { enable = true; };
+    #lualine = { enable = true; };
     # better-escape = {
     #   enable = true;
     #   settings.mappings = {

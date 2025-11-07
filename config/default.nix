@@ -30,6 +30,7 @@
   };
   config.extraPlugins = with pkgs.vimPlugins; [ vim-polyglot ];
 
-  config.diagnostic.settings.severity_sort = true;
+  config.diagnostic.settings.virtual_text = true;
+  #config.diagnostic.settings.severity_sort = true;
 
 }

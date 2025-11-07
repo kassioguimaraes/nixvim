@@ -48,6 +48,12 @@
       };
 
     };
+    lsp-lines = {
+      enable = true;
+      autoLoad = true;
+    };
+    lsp-signature.enable = true;
+    lsp-status.enable = true;
     blink-cmp-copilot.enable = true;
     blink-cmp = {
       enable = true;
